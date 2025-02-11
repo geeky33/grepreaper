@@ -38,7 +38,7 @@ Currently, you can work with the grepreaper functions by sourcing the code direc
 
 ```{r installation, eval=FALSE}
 # install.packages("devtools")
-devtools::install_github("geeky33/grepreaper", build_vignettes = FALSE)
+devtools::install_github("geeky33/grepreaper", build_vignettes = TRUE)
 
 ```
 
