@@ -37,4 +37,4 @@ count_rows_with_pattern <- function(pattern) {
 }
 
 # Example usage
-count_rows_with_pattern("VS")
+# count_rows_with_pattern("VS")
