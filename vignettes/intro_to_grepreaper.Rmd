@@ -1,0 +1,65 @@
+grepreaper: Advanced File Reading in R
+
+## Introduction
+
+The **grepreaper** R package aims to simplify advanced file reading tasks by integrating with powerful command-line tools such as `grep`. While R provides several file reading utilities, linking file reading to `grep` offers additional capabilities such as:
+
+-   Counting the number of records before reading the data.
+
+-   Extracting only records that match specific patterns.
+
+-   Reading and aggregating data from multiple files simultaneously.
+
+The package provides wrapper functions to help R users leverage these advanced capabilities without needing extensive command-line knowledge.
+
+This vignette will guide you through using the function `count_rows_with_pattern()` to count rows in the `diamonds` dataset containing a specific pattern.
+
+------------------------------------------------------------------------
+
+## Installation
+
+Currently, you can work with the grepreaper functions by sourcing the code directly. Make sure you have the required packages installed:
+
+```{r installation, eval=FALSE}
+# install.packages("devtools")
+devtools::install_github("geeky33/grepreaper", build_vignettes = TRUE)
+```
+
+------------------------------------------------------------------------
+
+## Usage Example
+
+Below is an example of how to use the `count_rows_with_pattern()` function.
+
+### Load Required Libraries
+
+```         
+library(data.table)
+library(ggplot2)
+```
+
+### Example Usage
+
+Count the number of rows in the `diamonds` dataset where the clarity contains the pattern "VS":
+
+```         
+count_rows_with_pattern("VS")
+```
+
+### Explanation
+
+-   The function writes the `diamonds` dataset to a temporary CSV file.
+
+-   It constructs a `grep` command to search for rows matching the specified pattern.
+
+-   The result is read back into R using `fread()`.
+
+-   The number of matching rows is returned.
+
+------------------------------------------------------------------------
+
+## Conclusion
+
+The `count_rows_with_pattern()` function demonstrates how grepreaper simplifies integrating `grep` with R's file reading functions. With further development, the package will include more tools for counting, reading, and aggregating data efficiently.
+
+Stay tuned for more powerful features as grepreaper evolves!
