@@ -1,6 +1,24 @@
-grepreaper: Advanced File Reading in R
+---
+title: "Getting Started with grepreaper"
+author: "Aarya Pandey"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with grepreaper}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
 
-## Introduction
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+library(grepreaper)
+```
+
+# Introduction
 
 The **grepreaper** R package aims to simplify advanced file reading tasks by integrating with powerful command-line tools such as `grep`. While R provides several file reading utilities, linking file reading to `grep` offers additional capabilities such as:
 
