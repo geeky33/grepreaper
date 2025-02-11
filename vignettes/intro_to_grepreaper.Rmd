@@ -14,8 +14,6 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-
-
 ```
 
 # Introduction
@@ -40,8 +38,8 @@ Currently, you can work with the grepreaper functions by sourcing the code direc
 
 ```{r installation, eval=FALSE}
 # install.packages("devtools")
-devtools::install_github("geeky33/grepreaper", build_vignettes = TRUE)
-library(grepreaper)
+devtools::install_github("geeky33/grepreaper", build_vignettes = FALSE)
+
 ```
 
 ------------------------------------------------------------------------
@@ -61,7 +59,8 @@ library(ggplot2)
 
 Count the number of rows in the `diamonds` dataset where the clarity contains the pattern "VS":
 
-``` {r example2}    
+``` {r example2}
+library(grepreaper)
 count_rows_with_pattern("VS")
 ```
 
