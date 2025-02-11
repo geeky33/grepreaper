@@ -16,6 +16,7 @@ library(ggplot2)
 #' count_rows_with_pattern("VS")
 #'
 #' @import data.table ggplot2
+#' @export
 count_rows_with_pattern <- function(pattern) {
   # Write diamonds data to a temporary file
   temp_file <- tempfile(fileext = ".csv")
