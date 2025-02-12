@@ -2,7 +2,7 @@
 
 ## Overview
 
-`grepreaper` is an R package designed to enhance file reading capabilities using `grep`. While R provides many tools for reading files, `grepreaper` bridges the gap by offering powerful functions to:
+`grepreaper` is a R package designed to enhance file reading capabilities using `grep`. While R provides many tools for reading files, `grepreaper` bridges the gap by offering powerful functions to:
 
 - Count the number of records before reading data.
 - Extract records matching specific patterns.
