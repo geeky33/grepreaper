@@ -24,18 +24,19 @@ count_rows_with_pattern <- function(pattern) {
   # Save the diamonds dataset to the temporary file
   fwrite(diamonds, temp_file)
 
-  # Use fread with grep to filter rows containing the specified pattern
-  cmd <- paste("grep", shQuote(pattern), shQuote(temp_file))
+  # Use grep -c to count occurrences without loading data into R
+  cmd <- paste("grep -c", shQuote(pattern), shQuote(temp_file))
 
-  # Read the filtered result from grep
-  result <- fread(cmd = cmd)
+  # Execute the command and capture the count
+  result <- as.integer(system(cmd, intern = TRUE))
 
-  # Clean up the temporary file to avoid clutter
+  # Clean up the temporary file
   unlink(temp_file)
 
-  # Return the number of matching rows
-  return(nrow(result))
+  # Return the count
+  return(result)
 }
+
 
 # Example usage
 # count_rows_with_pattern("VS")
