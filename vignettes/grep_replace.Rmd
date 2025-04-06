@@ -1,0 +1,17 @@
+
+---
+
+## vignettes/grep_replace_pattern.Rmd
+
+```markdown
+---
+title: "Replacing Patterns in Files using grepreaper"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Replacing Patterns in Files}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+library(grepreaper)

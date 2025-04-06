@@ -2,11 +2,16 @@ Package: grepreaper
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Aarya", "Pandey", , "aaryap1204@gmail.com", role = c("aut", "cre"))
+Description: Provides a suite of functions for efficient file reading and pattern matching using 
+    the power of 'grep' at the command line. Enables counting matches, extracting matching lines,
+    finding files with matches, and viewing context lines around matches. Supports reading and 
+    aggregating data from multiple files, searching with regular expressions or fixed patterns,
+    and handling large files efficiently.
+License: License: MIT + file LICENSE
 Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: data.table, utils
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Suggests: 

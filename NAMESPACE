@@ -3,3 +3,7 @@
 export(count_rows_with_pattern)
 import(data.table)
 import(ggplot2)
+export(grep_extract_rows)
+export(grep_pattern_summary)
+export(grep_replace_pattern)
+

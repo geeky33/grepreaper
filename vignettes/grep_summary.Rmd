@@ -1,0 +1,11 @@
+---
+title: "Summarizing Pattern Matches using grepreaper"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Summarizing Pattern Matches}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+library(grepreaper)

@@ -1,0 +1,21 @@
+---
+title: "Pattern Extraction with grep_extract"
+author: "Package Maintainer"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Pattern Extraction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Introduction
+
+The `grep_extract` function provides powerful pattern extraction capabilities:
+
+```{r}
+library(grepTools)
+
+# Extract prices from text
+text <- "Items: $12.99, $24.95, $7.50"
+grep_extract(text, "\\$\\d+\\.\\d{2}")

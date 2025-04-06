@@ -4,7 +4,23 @@
 
 We analyzed the `diamonds` dataset from the `ggplot2` package in R and used the `grep()` function to identify rows matching the pattern 'VS'. The total number of qualifying rows was computed successfully.
 
-Below is the screenshot showcasing the result:
+grep_extract()
+This function extracts all lines from a file containing a specified pattern.
+
+
+grep_pattern_summary()
+This function provides a detailed summary of pattern matches in a file or dataset, including:
+
+Total Matches,
+Lines with Match,
+First Occurrence Row,
+Last Occurrence Row.
+
+grep_replace_pattern()
+This function replaces all occurrences of a specified pattern with a replacement string in a file.
+
+
+Below is the screenshot showcasing the result for the 1st part:
 
 ![Easy Task Result](figs/easy_task.png)
 
